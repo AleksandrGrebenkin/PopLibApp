@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/tv_games_played"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Solo" />
+
+    <TextView
+        android:id="@+id/tv_games_played_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="@string/played"
+        app:layout_constraintStart_toStartOf="@id/tv_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_games_played"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:gravity="end"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_games_played_title"
+        app:layout_constraintStart_toEndOf="@id/tv_games_played_title"
+        tools:text="1.23" />
+
+    <TextView
+        android:id="@+id/tv_wins_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10sp"
+        android:text="@string/wins"
+        android:textColor="@color/green_A400"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_games_played_title"
+        app:layout_constraintStart_toEndOf="@id/tv_games_played" />
+
+    <TextView
+        android:id="@+id/tv_wins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:textColor="@color/green_A400"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_games_played_title"
+        app:layout_constraintStart_toEndOf="@id/tv_wins_title"
+        tools:text="10" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

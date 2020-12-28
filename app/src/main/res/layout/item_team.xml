@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/tv_rating"
+        app:layout_constraintStart_toEndOf="@id/iv_image"
+        app:layout_constraintTop_toTopOf="@id/iv_image"
+        tools:text="Virtus Pro" />
+
+    <TextView
+        android:id="@+id/tv_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_name"
+        app:layout_constraintStart_toEndOf="@id/tv_name"
+        tools:text="VP" />
+
+    <TextView
+        android:id="@+id/tv_rating_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="@string/rating"
+        app:layout_constraintBottom_toBottomOf="@id/iv_image"
+        app:layout_constraintStart_toStartOf="@id/tv_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:gravity="end"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_rating_title"
+        app:layout_constraintStart_toEndOf="@id/tv_rating_title"
+        tools:text="1.23" />
+
+    <TextView
+        android:id="@+id/tv_wins_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10sp"
+        android:text="@string/wins"
+        android:textColor="@color/green_A400"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_rating_title"
+        app:layout_constraintStart_toEndOf="@id/tv_rating" />
+
+    <TextView
+        android:id="@+id/tv_wins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:textColor="@color/green_A400"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_rating_title"
+        app:layout_constraintStart_toEndOf="@id/tv_wins_title"
+        tools:text="10" />
+
+    <TextView
+        android:id="@+id/tv_looses_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10sp"
+        android:text="@string/looses"
+        android:textColor="@color/read_A400"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_rating_title"
+        app:layout_constraintStart_toEndOf="@id/tv_wins" />
+
+    <TextView
+        android:id="@+id/tv_losses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:textColor="@color/read_A400"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_rating_title"
+        app:layout_constraintStart_toEndOf="@id/tv_looses_title"
+        tools:text="10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

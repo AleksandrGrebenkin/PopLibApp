@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">PopLibApp</string>
     <string name="rating">rating:</string>
     <string name="wins">wins:</string>
     <string name="looses">looses:</string>
